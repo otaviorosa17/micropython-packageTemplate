@@ -1,1 +1,2 @@
-# TODO(jimmo): Helpers for the camera driver.
+def sayHello(name):
+  printf ("Hello from packageTemplate %s", name)
