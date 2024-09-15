@@ -13,3 +13,5 @@ Package Template
 
 Show how to create Micropython packages with explanations (as detailed as possible/manageable)
 
+### The shortest path (by now)
+
