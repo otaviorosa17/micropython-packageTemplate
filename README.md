@@ -13,6 +13,8 @@ Package Template
 
 Show how to create Micropython packages with explanations (as detailed as possible/manageable)
 
+## Results
+
 ### The shortest path (by now)
 
 1. Install, to your micropython device, this package (to test if the instructions are still useful);
@@ -81,4 +83,25 @@ mip.install("github:YOUR_GITHUB_USER/micropython-packageTemplate")
   utils.sayHello('Jim') 
   ```
   should be like it is
-  
+- latest documentation about Micropython mip: https://docs.micropython.org/en/latest/reference/packages.html
+- forum posts on Micropython mip: https://github.com/orgs/micropython/discussions/11980
+- repository of packages designed to be useful for writing MicroPython applications: https://github.com/micropython/micropython-lib
+
+There is not much documentation on what each entry in `package.json` mean. Perhaps a *by example* approach would be enough. 
+
+```json
+{
+  "urls": [
+    ["packageTemplate/__init__.py", "github:fnakano/micropython-packageTemplate/packageTemplate/__init__.py"],
+    ["packageTemplate/utils.py", "github:fnakano/micropython-packageTemplate/packageTemplate/utils.py"]
+  ],
+  "deps": [
+    ["collections-defaultdict", "latest"]
+  ],
+  "version": "0.1"
+}
+```
+
+> More sophisticated packages (i.e. with more than one file, or with dependencies) can be downloaded by specifying the path to their package.json.
+
+(Source: https://docs.micropython.org/en/latest/reference/packages.html#installing-packages-with-mip , accessed Sept, 15, 2024)
