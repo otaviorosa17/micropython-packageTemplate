@@ -1,7 +1,7 @@
 {
   "urls": [
-    ["micropython-packageTemplate/__init__.py", "github:fnakano/micropython-packageTemplate/mlx90640/__init__.py"],
-    ["micropython-packageTemplate/utils.py", "github:fnakano/micropython-packageTemplate/mlx90640/utils.py"]
+    ["packageTemplate/__init__.py", "github:fnakano/micropython-packageTemplate/mlx90640/__init__.py"],
+    ["packageTemplate/utils.py", "github:fnakano/micropython-packageTemplate/mlx90640/utils.py"]
   ],
   "deps": [
     ["collections-defaultdict", "latest"]
