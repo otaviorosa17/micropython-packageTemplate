@@ -1,2 +1,2 @@
 def sayHello(name):
-  printf (name, ", hello from packageTemplate")
+  print (name, ", hello from packageTemplate")
