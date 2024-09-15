@@ -1,18 +1,15 @@
-# micropython-mlx90640
+# Package Template
 
-Driver for MLX90640 IR Camera
+Package Template
 
-I haven't written this driver yet, this is currently a demo for [micropython-lib#542](https://github.com/micropython/micropython-lib/pull/542).
+(meta) Considerations
 
-It shows how to write a package.json, with URLs and dependencies, such that it can be installed from [mip](https://docs.micropython.org/en/latest/reference/packages.html#installing-packages-with-mip) via:
+1. I believe running through a simple tutorial or a simple example is the most natural way to learn something.
+   - but *simple* examples may get complicated as the author knowledge evolves. I'll try not to do this.
+2. This example is based on https://github.com/jimmo/micropython-mlx90640 (forked on Sept, 15, 2024)
+   - added a working function into `packageTemplate.utils` in order to provide a more useful example
 
-```
->>> import mip
->>> mip.install("github:jimmo/micropython-mlx90640")
-```
+## Objective
 
-Or from mpremote via
+Show how to create Micropython packages with explanations (as detailed as possible/manageable)
 
-```bash
-mpremote mip install github:jimmo/micropython-mlx90640
-```
