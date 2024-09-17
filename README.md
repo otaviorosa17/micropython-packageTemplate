@@ -133,7 +133,7 @@ When the destination path is a relative path, the package will be installed unde
 
 Installing in /lib is fine since `/lib` is in the search path for installed packages. (*note*: I tested on an ESP8266, not on ESP32)
 
-![](/Captura de tela de 2024-09-17 12-57-10.png)
+![](./Captura%20de%20tela%20de%202024-09-17%2012-57-10.png)
 
 
 In "deps", each pair is [name, value] where name is a dependency name and value is a version specifier. (I didn't explore this, so I don't know where the name is defined (in the dependable package or in the `sys.path`), which syntax is used in a version specifier and which effect it has on the path specifier).
