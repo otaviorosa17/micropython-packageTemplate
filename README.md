@@ -129,6 +129,13 @@ JSON encoding is standardized (https://www.json.org/json-en.html , https://datat
 
 In "urls", each pair is [name , value] where name is the destination path (on Micropython device) of some code. value is the source link of some code. Notice that destination path is a relative path. There is a discussion in Micropython forum about the convenience of relative versus absolute paths (https://github.com/orgs/micropython/discussions/11980) (That's why a python package file is installed to /lib in ESP32S Dev Kit Micropython).
 
+When the destination path is a relative path, the package will be installed under `/lib` (if the folder does not exists, it will be created). I did'nt test if an absolute path, instead of a relative one, would install the package in the specified absolute path, or if `../` installs one level above `/lib`.
+
+Installing in /lib is fine since `/lib` is in the search path for installed packages. (*note*: I tested on an ESP8266, not on ESP32)
+
+![](/Captura de tela de 2024-09-17 12-57-10.png)
+
+
 In "deps", each pair is [name, value] where name is a dependency name and value is a version specifier. (I didn't explore this, so I don't know where the name is defined (in the dependable package or in the `sys.path`), which syntax is used in a version specifier and which effect it has on the path specifier).
 
 ## References
