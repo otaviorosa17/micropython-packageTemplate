@@ -40,7 +40,7 @@ Download and install the package by running the code below:
   
 ```python
 import mip
-mip.install("github:FNakano/micropython-packageTemplate")
+mip.install("github:otaviorosa17/micropython-packageTemplate")
 ```
 
 Expected result:
@@ -106,8 +106,8 @@ There is not much documentation on what each entry in `package.json` mean. Perha
 ```json
 {
   "urls": [
-    ["packageTemplate/__init__.py", "github:fnakano/micropython-packageTemplate/packageTemplate/__init__.py"],
-    ["packageTemplate/utils.py", "github:fnakano/micropython-packageTemplate/packageTemplate/utils.py"]
+    ["packageTemplate/__init__.py", "github:otaviorosa17/micropython-packageTemplate/packageTemplate/__init__.py"],
+    ["packageTemplate/utils.py", "github:otaviorosa17/micropython-packageTemplate/packageTemplate/utils.py"]
   ],
   "deps": [
     ["collections-defaultdict", "latest"]
